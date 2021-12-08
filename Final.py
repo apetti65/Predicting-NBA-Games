@@ -63,6 +63,7 @@ test_rfeatures = np.array(test_rdf)
 
 regression_model = tf.keras.models.Sequential()
 regression_model.add(tf.keras.layers.Dense(7, activation='relu'))
+regression_model.add(tf.keras.layers.Dense(5, activation='relu'))
 regression_model.add(tf.keras.layers.Dense(1))
 regression_model.compile(loss='mean_absolute_error', optimizer='adam')
 
